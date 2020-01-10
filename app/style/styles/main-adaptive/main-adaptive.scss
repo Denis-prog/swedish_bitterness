@@ -1,0 +1,42 @@
+@media(max-width: 768px) {
+
+    html {
+        font-size: $font-size-lg-default-adaptive;
+    }
+
+    .title {
+        font-size: $font-size-xxxxl;
+    }
+
+    .main-title {
+        font-size: $font-size-xxxxxl;
+    }
+}
+
+@media(max-width: 600px) {
+
+    .btn {
+        width: 100%;
+
+        &:after {
+            display: none;
+        }
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    html {
+        background: $main-html-bg;
+    }
+
+    .container-mobile {
+        padding: 0;
+        height: auto;
+    }
+
+    .adaptive-mobile-padding {
+        padding: 0 $padding-sm;
+    }
+}

@@ -1,0 +1,112 @@
+$light-gray:#9a9a9a;
+$light-black:#303030;
+$white:#fff;
+$black:#000;
+$light-green:#c8dcba;
+$light-green_variable_2:#8ab969;
+$light-green_variable_3: #e9f5dc;
+$green:#7eb252;
+$dark-green: #386115;
+$light-green_variable_4: #09d184;
+$light-gray: #f3f7f0;
+$dark-gray: #817f7f;
+
+//main
+$main-html-bg: $light-green_variable_3;
+$main-btn-border-focus: $dark-green;
+$main-btn-border-hover: $dark-green;
+$main-form-btn-bg: $green;
+$main-form-btn-color: $white;
+$main-link-hover-color: $light-green_variable_4;
+
+//header
+$header-text-color: $light-green_variable_2;
+$header-phone-color: $light-black;
+$header-phone-text-color: $light-green_variable_2;
+$header-adaptive-bg: $white;
+
+//benefits
+$benefits-content-desc-color: $white;
+$benefits-content-desc-form-bg: $white;
+$benefits-content-desc-request-info-border: $light-green;
+$benefits-content-desc-request-info-title-color: $light-black;
+$benefits-content-desc-request-info-form-input-border: $light-green;
+$benefits-content-desc-request-info-form-input-placeholder-color: $light-green;
+$benefits-content-desc-request-info-form-input-border-focus: $light-green;
+
+//advantages
+$advantages-item-title-color: $light-green_variable_2;
+$advantages-item-title-border: $light-green_variable_2;
+$advantages-item-title-before-border: $light-green;
+
+//types-ailments
+$types-ailments-inner-list-item-count-color: $light-green_variable_2;
+$types-ailments-inner-list-item-border: $light-green;
+$types-ailments-inner-view-reviews-border: $light-green_variable_2;
+$types-ailments-inner-bg: $light-green_variable_3;
+$types-ailments-inner-view-reviews-bg: $light-green_variable_3;
+$types-ailments-inner-view-reviews-item-link-color: $light-green_variable_2;
+$types-ailments-inner-btn-bg: $green;
+$types-ailments-inner-btn-color: $white;
+$types-ailments-inner-view-model-points-border: $light-gray;
+$types-ailments-inner-view-model-points-color: $light-gray;
+$types-ailments-inner-view-model-points-bg: $green;
+$types-ailments-inner-list-item-bg-hover: $light-green_variable_2;
+
+//popularity
+$popularity-call-to-action-bg: $white;
+$popularity-call-to-action-border: $light-green_variable_2;
+$popularity-inner-reasons-subtitle-color: $dark-gray;
+$popularity-inner-call-to-action-btn-color: $white;
+$popularity-inner-call-to-action-btn-bg: $green;
+
+//history
+$history-inner-text-bg: $light-green_variable_3;
+$history-inner-form-email-border: $light-green;
+$history-inner-form-email-placeholder-color: $light-green;
+
+//quote
+$quote-inner-border: $green;
+$quote-inner-text-years-color: $dark-gray;
+$quote-adaptive-bg: $white;
+
+//equipment
+$equipment-fluid-bg: $light-green_variable_3;
+$equipment-inner-item-box-border: $green;
+$equipment-inner-box-bg: $white;
+$equipment-inner-adaptive-mobile-border: $white;
+
+//composition
+$composition-inner-item-bg:  $light-green_variable_3;
+$composition-inner-item-current-color: $light-green_variable_2;
+$composition-inner-item-order-border: $light-green_variable_2;
+$composition-inner-item-order-before-color: $light-green_variable_2;
+$composition-inner-desc-color: $white;
+$composition-inner-item-box-list-item-before-color: $light-green_variable_2;
+$composition-inner-item-adaptiv-position-last-bg: $white;
+
+//reviews
+$reviews-inner-box-bg: $light-green_variable_3;
+$reviews-inner-box-header-btn-bg: $white;
+$reviews-inner-box-header-btn-color: $dark-gray;
+$reviews-inner-box-header-btn-border: $light-green_variable_3;
+$reviews-inner-box-items-current-text-color: $dark-gray;
+$reviews-inner-box-items-current-text-before-border: $dark-green;
+$reviews-inner-feedback-management-link-color: $light-green_variable_2;
+$reviews-inner-feedback-management-link-border: $light-green_variable_2;
+
+//instructions
+$instructions-wrapper-bg: $white;
+$instructions-inner-border: $light-green_variable_2;
+
+//warranty
+$warranty-fluid-bg: $light-green_variable_3;
+$warranty-inner-wrapper-bg: $white;
+$warranty-inner-order-window-border: $light-green_variable_2;
+$warranty-inner-order-window-sup-color: $light-green_variable_2;
+$warranty-inner-order-window-sup-bg: $white;
+
+//footer
+$footer-inner-box-link-color:  $dark-gray;
+$footer-inner-box-link-border: $dark-gray;
+$footer-adaptive-bg: $white;

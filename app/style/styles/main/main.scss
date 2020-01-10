@@ -1,0 +1,120 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+p {
+    margin: 0;
+}
+
+html,
+body {
+    width: 100%;
+    margin: 0;
+    line-height: 1.5;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: $font-size-lg-default;
+}
+
+.container {
+    max-width: 1200px;
+    padding-left: $padding-sm;
+    padding-right: $padding-sm;
+    margin: 0 auto;
+}
+
+.container-bg {
+    max-width: 1720px;
+    margin: 0 auto;
+}
+
+///общие для кнопок
+.btn {
+    position: relative;
+    border: none;
+    background: $main-form-btn-bg;
+    font-size: $font-size-sm;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $main-form-btn-color;
+    letter-spacing: 1px;
+    outline: transparent;
+    cursor: pointer;
+
+    &:focus {
+        outline: 1px solid $main-btn-border-focus;
+    }
+
+    &:hover {
+        outline: 1px solid $main-btn-border-hover;
+    }
+
+    &:after {
+        content: '';
+        background: url('../img/main/main_arrov_right.png') no-repeat;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 35px;
+        height: 32px;
+        position: absolute;
+
+    }
+}
+
+//общие для контактного телефона
+.phone {
+    font-size: $font-size-xxl;
+    font-weight: 500;
+    color: $light-black;
+
+    &-link {
+        color: $light-black;
+        position: relative;
+
+        &:before {
+            content: '';
+            position: absolute;
+            background: url('../img/main/main_phone.svg') no-repeat;
+            width: 15px;
+            height: 15px;
+            left: -30px;
+            top: 5px;
+        }
+    }
+
+    &-text {
+        font-size: $font-size-xs;
+        text-align: right;
+        padding-top: $padding-xxs;
+        color: $header-phone-text-color;
+
+    }
+}
+
+//общие для подзаголовка в секциях
+.title {
+    font-size: $font-size-xxxxxl;
+    font-weight: 700;
+}
+
+//общие для hover ссылок
+.link {
+    text-decoration: none;
+
+    &:hover {
+        color: $main-link-hover-color;
+        border-color: $main-link-hover-color;
+    }
+}
+
+
+.css-adaptive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

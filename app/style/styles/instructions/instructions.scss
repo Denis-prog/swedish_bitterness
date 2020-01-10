@@ -1,0 +1,122 @@
+.instructions {
+    margin-bottom: 200px;
+    position: relative;
+
+    &-fluid {
+        background: url('../img/instructions/instructions_balm.jpg') no-repeat;
+        background-position: left center;
+        min-height: 775px;
+        height: 1px;
+    }
+
+    &-flex {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        height: 100%;
+    }
+
+    &-wrapper {
+        max-width: 685px;
+        padding: $padding-m;
+        background: $instructions-wrapper-bg;
+    }
+
+    &-inner {
+        border: 1px solid $instructions-inner-border;
+        padding: 70px $padding-m 70px 70px;
+
+        &-title {
+            font-size: $font-size-xxxxxl;
+            font-weight: 700;
+            line-height: 1.4;
+            margin: 0 0 50px;
+        }
+
+        &-text {
+            line-height: 1.4;
+            margin-bottom: 40px;
+        }
+
+        &-subtext {
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: $font-size-sm;
+            margin-bottom: 60px;
+        }
+
+        &-btn {
+            padding: $padding-lg 80px $padding-lg $padding-xxl;
+
+            &:after {
+                right: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+
+    .instructions {
+        margin-bottom: 100px;
+
+        &-flex {
+            justify-content: center;
+        }
+
+        &-wrapper {
+            align-self: center;
+        }
+
+        &-fluid {
+            background: none;
+            height: auto;
+        }
+
+        &-inner {
+
+            &-btn {
+                width: 100%;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+@media(max-width: 600px) {
+
+    .instructions {
+        margin-bottom: 50px;
+
+        &-fluid {
+            min-height: auto
+        }
+
+        &-wrapper {
+            padding: 0;
+        }
+
+        &-inner {
+            border: none;
+            padding: 0;
+
+            &-title {
+                margin-top: 50px;
+            }
+
+            &-subtext {
+                text-align: center;
+            }
+
+            &-subtext {
+                margin-bottom: 30px;
+            }
+
+            &-btn {
+                padding: 25px 35px;
+                line-height: 1.5;
+            }
+        }
+    }
+}
