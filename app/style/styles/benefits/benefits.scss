@@ -1,0 +1,280 @@
+.benefits {
+    margin-bottom: 75px;
+
+    &-mobile-wrapper {
+        display: none;
+    }
+
+    &-images {
+        background: url('../img/benefits/benefits_bg.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
+        min-height: 540px;
+        height: 1px;
+    }
+
+    &-wrapper {
+        margin-top: -450px;
+    }
+
+    &-content {
+        display: flex;
+        justify-content: space-between;
+
+        &-image {
+            margin-left: 125px;
+        }
+
+        &-desc {
+            max-width: 570px;
+            width: 100%;
+            margin-top: 30px;
+
+            &-text {
+                color: $benefits-content-desc-color;
+                margin-bottom: 90px;
+
+                &-suptitle {
+                    font-size: $font-size-sm;
+                    margin-bottom: 25px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                }
+
+                &-title {
+                    font-size: $font-size-6xl;
+                    margin: 0;
+                    margin-bottom: 40px;
+                    font-weight: 600;
+                }
+
+                &-subtitle {
+                    font-size: $font-size-xl;
+                    padding-right: $padding-s;
+                }
+
+            }
+
+            &-container {
+                background: $benefits-content-desc-form-bg;
+                padding: $padding-m;
+            }
+
+            &-request-info {
+                border: 1px solid $benefits-content-desc-request-info-border;
+                padding: $padding-xxxxxl $padding-xxxxxl 115px;
+                position: relative;
+
+                &-title {
+                    color: $benefits-content-desc-request-info-title-color;
+                    font-size: $font-size-sm;
+                    line-height: 1.38rem;
+                    margin-bottom: 35px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    width: 185px;
+                }
+
+                &-form {
+
+                    &-input {
+                        width: 47%;
+                        padding: $padding-sm $padding-xxs;
+                        outline: transparent;
+                        border: none;
+                        border-bottom: 1px solid $benefits-content-desc-request-info-form-input-border;
+
+                        &-name {
+                            margin-right: 5%;
+                        }
+
+                        &::placeholder {
+                            color: $benefits-content-desc-request-info-form-input-placeholder-color;
+                        }
+
+                        &:focus {
+                            border: 1px solid $benefits-content-desc-request-info-form-input-border-focus;
+                            border-top: none;
+                        }
+                    }
+
+                    &-btn {
+                        position: absolute;
+                        bottom: 0;
+                        right: 0;
+                        padding: $padding-m 110px $padding-m 75px;
+
+                        &:after {
+                            right: 65px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1040px) and (min-width: 769px) {
+
+    .benefits {
+
+        &-wrapper {
+            margin-top: -510px;
+        }
+
+        &-content {
+
+            &-image {
+                margin-left: 0;
+                margin-right: 15px;
+            }
+
+            &-desc-text {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px) {
+
+    .benefits {
+
+        &-content {
+
+            &-image {
+                position: absolute;
+                left: 40px;
+                margin-left: 0;
+                margin-right: 15px;
+
+                &>img {
+                    width: 250px;
+                }
+            }
+
+            &-desc {
+                z-index: 2;
+                margin-left: 20%;
+
+                &-text {
+                    max-width: 500px;
+                    margin-left: 40%;
+                    padding-right: $padding-s;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 600px) {
+
+    .benefits {
+        margin-bottom: 40px;
+        min-height: 540px;
+
+        &-wrapper {
+            margin-top: -510px;
+        }
+
+        &-mobile-wrapper {
+            height: 100%;
+            position: relative;
+            display: block;
+
+            &-btn {
+                position: absolute;
+                padding: 5% 0;
+                bottom: 0;
+                right: 0;
+                left: 0;
+            }
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            &-image {
+                width: 100px;
+            }
+
+            &-desc {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+
+                &-text {
+                    margin: 0;
+                    padding: 0;
+                    order: 1;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+
+                    &-title {
+                        margin-bottom: 40px;
+                    }
+
+                    &-subtitle {
+                        display: none;
+                    }
+                }
+
+                &-container {
+                    display: none;
+                }
+            }
+        }
+
+        &-content-image {
+            position: static;
+            order: 2;
+        }
+
+        &-content-desc-request-info-form-btn {
+            display: block;
+        }
+    }
+}
+
+
+/* 
+<section class="equipment">
+            <div class="container equipment-container">
+                <div class="equipment-inner">
+                    <div class="equipment-tablet-wrapper">
+                        <h2 class="equipment-inner-title title">
+                            Что вы получите
+                            вместе со сбором трав
+                            «Шведская горечь»?
+                        </h2>
+                    </div>
+                </div>
+            </div>
+                        <div class="container-bg equipment-fluid">
+                            <div class="container equipment-container">
+                            <div class="equipment-inner-box">
+                                <div class="equipment-inner-box-item">
+                                    <p class="equipment-inner-box-item-text">
+                                        сбор трав
+                                    </p>
+                                </div>
+                                <div class="equipment-inner-box-item">
+                                    <p class="equipment-inner-box-item-text">
+                                        инструкция по применению
+                                    </p>
+                                </div>
+                                <div class="equipment-inner-box-item">
+                                    <p class="equipment-inner-box-item-text">
+                                        сертификат качества</p>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+            
+        </section> */

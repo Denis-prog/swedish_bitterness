@@ -1,0 +1,199 @@
+.equipment {
+    margin-bottom: 200px;
+
+    &-fluid {
+        background: $equipment-fluid-bg;
+        min-height: 400px;
+        margin-top: 100px;
+    }
+
+    &-title {
+        max-width: 500px;
+        margin-left: 50px;
+    }
+
+    &-inner {
+        &-box {
+            position: relative;
+            top: -50px;
+            background: $equipment-inner-box-bg;
+            margin: 0 auto;
+            width: 1015px;
+            display: flex;
+
+            &-item {
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                margin: 0 20px 20px;
+                border: 1px solid $equipment-inner-item-box-border;
+                min-height: 315px;
+                width: 100%;
+
+                &:nth-child(01) {
+                    background: url('../img/equipment/equipment_herbs.png') center no-repeat,
+                        url('../img/equipment/equipment_number_01.png') center no-repeat;
+
+                }
+
+                &:nth-child(02) {
+                    background: url('../img/equipment/equipment_book.png') center no-repeat,
+                        url('../img/equipment/equipment_number_02.png') center no-repeat;
+
+                }
+
+                &:nth-child(03) {
+                    background: url('../img/equipment/equipment_certificate.png') center no-repeat,
+                        url('../img/equipment/equipment_number_03.png') center no-repeat;
+
+                }
+
+                &-text {
+                    font-weight: 700;
+                    text-align: center;
+                    width: 90%;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* .equipment {
+    margin-bottom: 200px;
+
+    &-fluid {
+        background: red;
+        min-height: 380px;
+        margin-top: 100px;
+    }
+
+    &-inner {
+
+        &-title {
+            max-width: 500px;
+        }
+
+        &-box {
+            position: relative;
+            top: -50px;
+            background: $equipment-inner-box-bg;
+            margin: 0 auto;
+            width: 1015px;
+            display: flex;
+
+            &-item {
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                margin: 0 20px 20px;
+                border: 1px solid $equipment-inner-item-box-border;
+                min-height: 315px;
+                width: 100%;
+
+                &:nth-child(01) {
+                    background: url('../img/equipment/equipment_herbs.png') center no-repeat,
+                        url('../img/equipment/equipment_number_01.png') center no-repeat;
+
+                }
+
+                &:nth-child(02) {
+                    background: url('../img/equipment/equipment_book.png') center no-repeat,
+                        url('../img/equipment/equipment_number_02.png') center no-repeat;
+
+                }
+
+                &:nth-child(03) {
+                    background: url('../img/equipment/equipment_certificate.png') center no-repeat,
+                        url('../img/equipment/equipment_number_03.png') center no-repeat;
+
+                }
+
+                &-text {
+                    font-weight: 700;
+                    text-align: center;
+                    width: 90%;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
+ */
+@media(max-width: 1040px) {
+
+    .equipment {
+        margin-bottom: 100px;
+        background: $equipment-fluid-bg;
+
+        &-container {
+            padding: 0;
+        }
+
+        &-tablet-wrapper {
+            display: flex;
+            flex-direction: column;
+            background: $equipment-fluid-bg;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &-title {
+            margin-bottom: 0;
+            margin-top: 0;
+            padding-top: 50px;
+            text-align: center;
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        &-inner {
+
+            &-box {
+                position: static;
+                align-self: center;
+                width: 98%;
+                max-width: 98%;
+
+                &-item {
+                    width: 33.33%;
+                    margin: 2%;
+                    height: auto;
+                    min-height: 265px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 600px) {
+
+    .equipment {
+        margin-bottom: 50px;
+
+        &-fluid {
+            margin-top: 0;
+        }
+
+        &-inner {
+            border-bottom: 20px solid $equipment-inner-adaptive-mobile-border;
+
+            &-title {
+                padding: $padding-s;
+                margin-top: 50px;
+            }
+
+            &-box {
+                flex-wrap: wrap;
+                background-color: $equipment-fluid-bg;
+
+                &-item {
+                    width: 100%;
+                    border: none;
+                }
+            }
+        }
+    }
+}

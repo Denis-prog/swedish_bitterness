@@ -1,0 +1,207 @@
+.warranty {
+    padding-top: $padding-xxxxxl;
+    margin-bottom: 25px;
+
+    &-title {
+        font-size: $font-size-xxxxxl;
+        font-weight: 700;
+        margin: 0 0 50px 0;
+    }
+
+    &-fluid {
+        background: $warranty-fluid-bg;
+    }
+
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        &-order {
+            margin: 35px 80px 40px 40px;
+
+            &-text,
+            &-text-adaptive {
+                font-size: $font-size-sm;
+                font-weight: 700;
+                line-height: 2;
+                text-transform: uppercase;
+                margin-bottom: 50px;
+                padding-right: 150px;
+
+                &-adaptive {
+                    display: none;
+                }
+            }
+
+            &-window {
+                border: 1px solid $warranty-inner-order-window-border;
+                padding: 10% $padding-xxxxxl 15% $padding-xxxxxl;
+                position: relative;
+
+                &-sup {
+                    font-size: $font-size-sm;
+                    background: $warranty-inner-order-window-sup-bg;
+                    color: $warranty-inner-order-window-sup-color;
+                    text-transform: uppercase;
+                    padding: 0 10px;
+                    font-weight: 700;
+                    position: absolute;
+                    top: -10px;
+                    left: 10;
+                }
+
+                &-text {
+                    margin-bottom: 20px;
+                    font-weight: 600;
+                }
+
+                &-btn {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    padding: $padding-m 105px $padding-m 60px;
+
+                    &:after {
+                        right: 30px;
+                    }
+                }
+
+            }
+
+            &-image {
+                position: relative;
+                top: -150px;
+            }
+        }
+
+        &-wrapper {
+            padding: $padding-m;
+            background: $warranty-inner-wrapper-bg;
+        }
+    }
+}
+
+@media(max-width: 1040px) {
+
+    .warranty {
+
+        padding-top: 0;
+
+        &-wrapper-adaptive-flex {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-title {
+            text-align: center;
+        }
+
+        &-inner {
+            order: 1;
+            display: flex;
+            margin-bottom: 50px;
+        }
+
+        &-inner-order {
+            order: 1;
+            margin: 0;
+            width: 55%;
+
+            &-window {
+                min-height: 408px;
+
+                &-btn {
+                    width: 100%;
+                    padding-left: 0;
+                    padding-right: 0;
+
+                    &:after {
+                        right: 7%;
+                    }
+                }
+            }
+
+            &-text {
+                display: none;
+
+                &-adaptive {
+                    display: block;
+                    text-align: center;
+                    width: 70%;
+                    margin: 50px auto 50px;
+                    padding: 0;
+                }
+            }
+
+            &-image {
+                position: static;
+                width: 45%;
+                height: 450px;
+
+                &>img {
+                    display: block;
+                    width: 90%;
+                    height: 450px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 600px) {
+
+    .warranty {
+        margin-bottom: 50px;
+        
+        &-wrapper-adaptive-mobile-flex {
+            display: flex;
+            flex-direction: column;
+        }
+
+        &-title {
+            margin-bottom: 0;
+        }
+
+        &-inner {
+            flex-direction: column;
+            order: 1;
+            margin-bottom: 0;
+
+            &-wrapper {
+                background-color: $warranty-fluid-bg;
+            }
+
+            &-order {
+                width: 100%;
+
+                &-window {
+                    border: none;
+                    min-height: auto;
+                    margin-top: 25px;
+
+                    &-sup {
+                        left: 50%;
+                        top: 2%;
+                        padding: 0;
+                        background: none;
+                    }
+                }
+
+                &-image {
+                    width: 100%;
+
+                    &>img {
+                        margin: 0 auto;
+                        width: 70%;
+                    }
+                }
+            }
+
+            &-wrapper {
+                padding: 0;
+            }
+        }
+    }
+}

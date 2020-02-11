@@ -1,0 +1,68 @@
+.quote {
+    margin-bottom: 100px;
+    max-width: 3000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/quote/quote_background_img_left.png')no-repeat,
+        url('../img/quote/quote_background_img_right.png') right top no-repeat;
+    min-height: 650px;
+
+    &-inner {
+        text-align: center;
+        max-width: 700px;
+        border-top: 2px solid $quote-inner-border;
+        border-bottom: 2px solid $quote-inner-border;
+        padding: $padding-sm 0;
+
+        &-text {
+            display: inline-block;
+            font-size: $font-size-xxxl;
+            font-weight: 700;
+            line-height: 2;
+
+            &-author {
+                font-weight: 400;
+                display: block;
+                margin-top: 20px;
+                font-size: $font-size-xl;
+            }
+
+            &-years {
+                font-size: $font-size-lg-default;
+                color: $quote-inner-text-years-color;
+            }
+        }
+    }
+}
+
+@media(max-width: 1040px) {
+
+    .quote {
+        background: none;
+        min-height: auto;
+
+        &-inner {
+            max-width: 98%;
+            margin: 0 auto;
+        }
+
+    }
+}
+
+@media(max-width: 600px) {
+
+    .quote {
+        background: $quote-adaptive-bg;
+        min-height: auto;
+
+        &-inner {
+            border: none;
+
+            &-text {
+                font-size: 14px;
+            }
+        }
+    }
+}

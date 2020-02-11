@@ -1,0 +1,44 @@
+.header {
+
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 105px;
+    }
+
+    &-text {
+        margin-right: auto;
+        margin-left: 40px;
+        color: $header-text-color;
+    }
+}
+
+@media(max-width: 677px) {
+
+    .header-text {
+        display: none;
+    }
+}
+
+@media(max-width: 600px) {
+
+    .header {
+        background-color: $header-adaptive-bg;
+
+        &-logo {
+            width: 40%;
+        }
+
+        &-phone {
+
+            &-link:before {
+                display: none;
+            }
+
+            &-text {
+                display: none;
+            }
+        }
+    }
+}

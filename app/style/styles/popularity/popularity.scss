@@ -1,0 +1,191 @@
+.popularity {
+    margin-bottom: 250px;
+
+    &-wrapper {
+        background: url('../img/popularity/popularity_woman.jpg') no-repeat;
+        min-height: 645px;
+    }
+
+    &-inner {
+        display: flex;
+        justify-content: flex-end;
+
+        &-call-to-action {
+            background: $popularity-call-to-action-bg;
+            padding: $padding-m;
+            align-self: flex-end;
+            margin-right: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-bottom: -94px;
+
+            &-item {
+                border: 1px solid $popularity-call-to-action-border;
+                border-bottom: none;
+                padding: $padding-xl;
+
+                &-text {
+                    font-weight: 600;
+                }
+            }
+
+            &-btn {
+                padding: 25px 100px 25px 40px;
+                font-weight: 600;
+
+                &:after {
+                    right: 45px;
+                }
+            }
+        }
+
+        &-reasons {
+            max-width: 490px;
+            margin-top: 65px;
+            width: 100%;
+            padding-right: $padding-sm;
+
+            &-title {
+                margin: 0;
+            }
+
+            &-subtitle {
+                margin: 50px 0;
+                font-weight: 700;
+                font-size: 14px;
+                color: $popularity-inner-reasons-subtitle-color;
+            }
+
+            &-list {
+                list-style: none;
+                padding: 0;
+
+                &-item {
+                    margin-bottom: 45px;
+                    padding-left: $padding-xxxl;
+                    font-size: $font-size-sm;
+                    line-height: 1.3;
+                    font-weight: 600;
+                    position: relative;
+
+                    &:before {
+                        content: '';
+                        background: url('../img/main/main_angle_arrow_right.svg') no-repeat;
+                        width: 8px;
+                        height: 13px;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        left: 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1600px) {
+
+    .popularity {
+        margin-bottom: 150px;
+
+        &-wrapper {
+            background-position: center 80%;
+        }
+
+        &-inner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 1%;
+
+            &-call-to-action {
+                order: 2;
+                margin: 0;
+            }
+
+            &-reasons {
+                max-width: 100%;
+                margin-top: 0;
+                margin-bottom: 520px;
+
+                &-title {
+                    text-align: center;
+                }
+
+                &-subtitle {
+                    margin: 40px 0;
+                }
+
+                &-list {
+
+                    &-item {
+                        font-size: $font-size-lg-default;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 1040px) {
+
+    .popularity {
+        margin-bottom: 100px;
+    }
+}
+
+@media(max-width: 600px) {
+
+    .popularity {
+        margin-bottom: 50px;
+
+        &-wrapper {
+            background-size: contain;
+        }
+
+        &-inner {
+            margin: 0;
+
+            &-call-to-action {
+                padding: 0;
+
+                &-item {
+                    border: none;
+                }
+
+                &-btn {
+                    padding: 5% 0;
+
+                    &-clear-adaptiv-mobile-text {
+                        display: none;
+                    }
+                }
+            }
+
+            &-reasons {
+                padding: $padding-sm;
+                margin-bottom: 55%;
+
+                &-title {
+                  /*   font-size: 25px; */
+                    margin: 0 auto;
+                }
+
+                &-subtitle {
+                    margin: 25px 0;
+                    text-align: center;
+                }
+
+                &-list {
+                    margin: 0 3%;
+
+                    &-item {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
